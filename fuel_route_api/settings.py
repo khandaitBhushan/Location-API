@@ -16,23 +16,16 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-gcq1uy5z5hpy3w6d(*43$&6*1h^a$hg(ernbp(ta_4vppp3+0h'
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -80,16 +73,14 @@ WSGI_APPLICATION = 'fuel_route_api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': os.getenv('SUPABASE_DB_PASSWORD', ''),
-        'HOST': 'db.bsujldjbnzkevfdviycw.supabase.co',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 SUPABASE_URL = os.getenv('VITE_SUPABASE_URL')
 SUPABASE_KEY = os.getenv('VITE_SUPABASE_ANON_KEY')
