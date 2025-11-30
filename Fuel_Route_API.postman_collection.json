@@ -1,0 +1,169 @@
+{
+  "info": {
+    "name": "Fuel Route Optimizer API",
+    "_postman_id": "fuel-route-api-v1",
+    "description": "API for calculating optimal fuel stops on road trips",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/health/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "health", ""]
+        },
+        "description": "Check if the API is running"
+      }
+    },
+    {
+      "name": "Short Route (No Fuel Stops)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"New York, NY\",\n  \"end_location\": \"Boston, MA\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/calculate-route/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "calculate-route", ""]
+        },
+        "description": "Calculate route between New York and Boston (under 500 miles, no fuel stops needed)"
+      }
+    },
+    {
+      "name": "Medium Route (One Fuel Stop)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"New York, NY\",\n  \"end_location\": \"Miami, FL\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/calculate-route/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "calculate-route", ""]
+        },
+        "description": "Calculate route between New York and Miami (requires fuel stops)"
+      }
+    },
+    {
+      "name": "Long Route (Multiple Fuel Stops)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"New York, NY\",\n  \"end_location\": \"Los Angeles, CA\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/calculate-route/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "calculate-route", ""]
+        },
+        "description": "Calculate cross-country route (requires multiple fuel stops)"
+      }
+    },
+    {
+      "name": "Regional Route",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"Chicago, IL\",\n  \"end_location\": \"Denver, CO\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/calculate-route/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "calculate-route", ""]
+        },
+        "description": "Calculate regional route between Chicago and Denver"
+      }
+    },
+    {
+      "name": "Invalid Request (Missing Location)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"New York, NY\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/calculate-route/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "calculate-route", ""]
+        },
+        "description": "Test error handling with missing end_location field"
+      }
+    },
+    {
+      "name": "Invalid Request (Empty Location)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"\",\n  \"end_location\": \"Boston, MA\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/calculate-route/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "calculate-route", ""]
+        },
+        "description": "Test validation with empty start_location"
+      }
+    }
+  ]
+}

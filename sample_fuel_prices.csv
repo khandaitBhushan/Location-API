@@ -1,0 +1,52 @@
+station_name,address,city,state,zip_code,latitude,longitude,fuel_price
+Shell,123 Main St,New York,NY,10001,40.7589,-73.9851,4.25
+Chevron,456 Market St,San Francisco,CA,94102,37.7749,-122.4194,4.89
+BP,789 Broadway,Los Angeles,CA,90012,34.0522,-118.2437,4.75
+ExxonMobil,321 Lake Shore Dr,Chicago,IL,60601,41.8781,-87.6298,3.95
+Sunoco,654 Main St,Philadelphia,PA,19102,39.9526,-75.1652,4.15
+Valero,987 Congress Ave,Austin,TX,78701,30.2672,-97.7431,3.45
+Marathon,147 Peachtree St,Atlanta,GA,30303,33.7490,-84.3880,3.65
+Circle K,258 Lincoln Rd,Miami,FL,33139,25.7617,-80.1918,3.85
+QuikTrip,369 Main St,Dallas,TX,75201,32.7767,-96.7970,3.55
+Wawa,741 Broad St,Newark,NJ,07102,40.7357,-74.1724,4.35
+7-Eleven,852 Mass Ave,Boston,MA,02115,42.3601,-71.0589,4.45
+Pilot,963 I-40,Memphis,TN,38103,35.1495,-90.0490,3.75
+Flying J,159 I-80,Omaha,NE,68102,41.2565,-95.9345,3.55
+Loves,753 I-35,Oklahoma City,OK,73102,35.4676,-97.5164,3.35
+Speedway,951 Woodward Ave,Detroit,MI,48226,42.3314,-83.0458,3.95
+GetGo,357 Fifth Ave,Pittsburgh,PA,15222,40.4406,-79.9959,4.05
+RaceTrac,159 Marietta St,Atlanta,GA,30303,33.7490,-84.3880,3.70
+Costco,753 N Point Pkwy,Alpharetta,GA,30022,34.0754,-84.2941,3.55
+Sam's Club,951 Memorial Dr,Atlanta,GA,30316,33.7490,-84.3880,3.60
+Murphy USA,357 Cobb Pkwy,Marietta,GA,30062,33.9526,-84.5499,3.50
+Shell,789 Richmond Hwy,Alexandria,VA,22305,38.8048,-77.0469,4.25
+Chevron,321 El Camino Real,Palo Alto,CA,94301,37.4419,-122.1430,5.15
+BP,654 Westheimer Rd,Houston,TX,77027,29.7604,-95.3698,3.65
+ExxonMobil,987 Biscayne Blvd,Miami,FL,33132,25.7617,-80.1918,3.95
+Sunoco,147 Market St,Philadelphia,PA,19106,39.9526,-75.1652,4.20
+Valero,258 Congress Ave,Austin,TX,78704,30.2672,-97.7431,3.50
+Marathon,369 Peachtree St,Atlanta,GA,30308,33.7490,-84.3880,3.68
+Circle K,741 Flagler St,Miami,FL,33130,25.7617,-80.1918,3.88
+QuikTrip,852 Main St,Kansas City,MO,64105,39.0997,-94.5786,3.45
+Wawa,963 Market St,Wilmington,DE,19801,39.7391,-75.5398,4.30
+Speedway,159 E Broad St,Columbus,OH,43215,39.9612,-82.9988,3.85
+GetGo,753 Forbes Ave,Pittsburgh,PA,15219,40.4406,-79.9959,4.10
+RaceTrac,951 Spring St,Atlanta,GA,30309,33.7490,-84.3880,3.72
+Shell,357 W Alameda Ave,Denver,CO,80223,39.7392,-104.9903,3.95
+Chevron,159 Broadway,Sacramento,CA,95818,38.5816,-121.4944,4.75
+BP,753 State St,Madison,WI,53703,43.0731,-89.4012,3.75
+ExxonMobil,951 N Michigan Ave,Chicago,IL,60611,41.8781,-87.6298,4.05
+Sunoco,357 Walnut St,Philadelphia,PA,19106,39.9526,-75.1652,4.18
+Valero,159 S Lamar Blvd,Austin,TX,78704,30.2672,-97.7431,3.48
+Marathon,753 Piedmont Ave,Atlanta,GA,30308,33.7490,-84.3880,3.66
+Circle K,951 Alton Rd,Miami Beach,FL,33139,25.7617,-80.1918,3.90
+QuikTrip,357 S Main St,Tulsa,OK,74103,36.1540,-95.9928,3.38
+Wawa,159 Kings Hwy,Cherry Hill,NJ,08034,39.9346,-75.0308,4.32
+Speedway,753 N High St,Columbus,OH,43215,39.9612,-82.9988,3.87
+GetGo,951 Liberty Ave,Pittsburgh,PA,15222,40.4406,-79.9959,4.08
+RaceTrac,357 Ponce de Leon Ave,Atlanta,GA,30308,33.7490,-84.3880,3.69
+Shell,159 University Ave,Palo Alto,CA,94301,37.4419,-122.1430,5.20
+Chevron,753 Sunset Blvd,Los Angeles,CA,90028,34.0522,-118.2437,4.85
+BP,951 S Michigan Ave,Chicago,IL,60605,41.8781,-87.6298,4.00
+ExxonMobil,357 Madison Ave,New York,NY,10017,40.7589,-73.9851,4.35
+Sunoco,159 Chestnut St,Philadelphia,PA,19106,39.9526,-75.1652,4.22
